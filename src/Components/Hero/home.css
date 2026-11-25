@@ -1,0 +1,135 @@
+@import url('../../../node_modules/react-modal-video/css/modal-video.min.css');
+@import url('../../../node_modules/react-modal-video/scss/modal-video.scss');
+/*
+* ----------------------------------------------------------------------------------------
+* 03. START HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.home_bg {
+  height: 750px;
+  position: relative;
+}
+@media only screen and (max-width: 960px) {
+  .home_bg {
+    height: auto;
+  }
+}
+.about_me_content {
+  padding-top: 250px;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .about_me_content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+.about_me_content h1 {
+  font-size: 80px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+@media only screen and (max-width: 480px) {
+  .about_me_content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home_btn {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .home_btn {
+    margin-top: 30px;
+  }
+}
+
+.home_btn a {
+  display: inline-block;
+  margin-right: 30px;
+}
+.home_one {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.1);
+}
+.home_one:hover,
+.home_one:focus {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.video-play {
+  margin-top: 35px;
+  display: block;
+}
+.video-play i {
+  background: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  margin-right: 15px;
+  display: inline-block;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.15);
+  transition: all 0.3s ease 0s;
+}
+.video-play:hover i {
+  background: #fff;
+  color: #000;
+}
+.video-title {
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/*Image style coding*/
+.profile_img {
+  padding-top: 200px;
+}
+@media only screen and (max-width: 812px) {
+  .profile_img {
+    padding-top: 100px;
+    text-align: center;
+  }
+}
+.profile_img img {
+}
+
+.home_socials {
+}
+.home_socials ul {
+}
+.home_socials ul li {
+  float: left;
+}
+.home_socials ul li a {
+  color: #1b1e22;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.home_socials ul li a:hover {
+  color: #6138bd;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 03. END HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/

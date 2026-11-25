@@ -1,0 +1,569 @@
+/*
+Author       : theme_ocean 
+Template Name: Ajmain - Personal Portfolio/CV HTML Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. START BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOMEPAGE CSS STYLE
+    04. START ABOUT CSS STYLE
+    05. START SERVICE CSS STYLE
+    06. START PORTFILIO CSS STYLE
+    07. START RESUME DESIGN
+    08. START PRICING DESIGN
+    09. START BLOG DESIGN
+    10. START TESTIMONIAL DESIGN
+    11. START CONTACT DESIGN
+    12. START FOOTER DESIGN
+    13. START SECTION TOP DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  background: #dff4e4;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0px;
+  margin-top: 0px;
+  font-family: oswald, sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+a {
+  font-family: oswald, sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+a:hover {
+  /* color: #fff; */
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+fieldset {
+  border: 0 none;
+  margin: 0 auto;
+  padding: 0;
+}
+b,
+strong {
+  font-weight: 600;
+}
+.no-padding {
+  padding: 0;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+/*END PRELOADER DESIGN*/
+.section-padding {
+  padding: 95px 0;
+}
+/*START SECTION TITLE DESIGN*/
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.section-title h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 300;
+}
+/*END SECTION TITLE DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+  background: #6138bd none repeat scroll 0 0;
+  border-radius: 30px;
+  bottom: 5px;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  height: 50px;
+  line-height: 47px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  position: fixed;
+  right: 5px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  width: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .topcontrol {
+    display: none;
+  }
+}
+.topcontrol:hover {
+  background: #fff;
+  color: #1b2032;
+}
+/*END SCROLL TO TOP*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09. START BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.blog_area {
+  padding-bottom: 50px;
+}
+.single_blog {
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  padding: 35px;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+}
+.single_blog h2 {
+  line-height: 34px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.single_blog h2 a {
+  color: #000;
+  font-weight: 400;
+}
+.single_blog p {
+  margin-bottom: 0px;
+}
+.single_blog span {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+.single_blog_two span {
+  margin-top: 0px;
+}
+.single_blog_two p {
+  margin-bottom: 30px;
+}
+
+/*START SINGLE PAGE BLOG STYLE*/
+.contact_form_blog {
+  padding-top: 0px !important;
+}
+.blog_sidebar_title {
+  border-bottom: 1px solid #eee;
+  color: #1b2032;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: x;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.blog_search,
+.latest_blog,
+.advertisement_post,
+.video_post,
+.categories,
+.tag,
+.banner {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+.tag {
+  overflow: hidden;
+}
+
+.blog_search input {
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 50px;
+}
+.blog_search input:focus {
+  border: 1px solid #72c02c;
+}
+.single_latest_blog {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.single_latest_blog h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single_latest_blog span {
+  color: #161616;
+}
+.single_upcoming_event {
+  margin-bottom: 20px;
+}
+.single_upcoming_event h4 {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 10px 0 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single_upcoming_event:hover h4 {
+  color: #000;
+}
+.single_upcoming_event span i {
+  margin-right: 5px;
+  color: #000;
+}
+.single_upcoming_event span {
+  color: #777;
+}
+.categories ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories ul li a {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  padding: 5px 0;
+  font-family: poppins;
+  font-weight: 400;
+}
+.categories ul li a:hover {
+  color: #000;
+}
+.categories ul li a i {
+  margin-right: 10px;
+}
+.video_post iframe {
+  width: 100%;
+  height: 100%;
+  border: medium none;
+}
+.tag a {
+  border: 2px solid #000;
+  border-radius: 30px;
+  color: #000;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 6px 4px;
+  padding: 3px 20px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+}
+.tag a:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+/*END BLOG SIDEBAR DESIGN*/
+/*START BLOG SINGLE PAGE DESIGN*/
+.bc_left {
+  padding-left: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+.bc_bottom {
+  margin-bottom: 30px;
+}
+.blog-img img {
+  width: 100%;
+}
+.author_part {
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.single_author {
+  background: #fff none repeat scroll 0 0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.08);
+  overflow: hidden;
+}
+.author_part img {
+  border-radius: 100px;
+  float: left;
+  height: 120px;
+  margin-right: 20px;
+  width: 120px;
+}
+.author_part h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.author_part p {
+  margin-bottom: 0;
+}
+.blog_head_title {
+  border-bottom: 1px solid #e1dddd;
+  margin: 0 0 30px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.comments_part {
+  margin-bottom: 60px;
+}
+.single_comment {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.08);
+  overflow: hidden;
+}
+.single_comment_mbnone {
+  margin-bottom: 0px;
+}
+.single_comment img {
+  border-radius: 100px;
+  float: left;
+  height: 120px;
+  margin-right: 20px;
+  width: 120px;
+}
+.single_comment h4 {
+  font-size: 16px;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+}
+.single_comment p {
+  margin-bottom: 0;
+}
+.comment-box {
+  border-radius: 10px;
+}
+.comment_form input,
+.comment_form textarea {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+/*END SINGLE PAGE BLOG STYLE*/
+/*
+* ----------------------------------------------------------------------------------------
+* 09. END BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.video_bg {
+  padding: 200px 0;
+  /* background: #fff; */
+  border: 20px solid #fff;
+  border-radius: 10px;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  background-image: url("../img/bg/video-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.play_btn_two i {
+  background: #fff;
+  color: #000;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 100px;
+  margin-right: 15px;
+  display: inline-block;
+  font-size: 30px;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.15);
+  transition: all 0.3s ease 0s;
+}
+.play_btn_two:hover i {
+  background: #000;
+  color: #fff;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 10.START TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.testimonial {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 812px) {
+  .testimonial {
+    margin-bottom: 30px;
+  }
+}
+.testimonial_content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.testimonial_content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1b2032;
+}
+.testimonial_content i {
+  color: #ffbd35;
+  font-size: 22px;
+}
+.testimonial_content p {
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 34px;
+  /* font-family: oswald,sans-serif; */
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.testi_pic_title {
+  display: inline-block;
+  overflow: hidden;
+}
+.testi_pic_title .pic {
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+}
+.testi_pic_title .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+.testi_pic_title h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.testi_pic_title small {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 8px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
+  .testimonial .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  }
+}
+
+.partner img {
+  width: 140px;
+}
+.partner.owl-theme .owl-controls {
+  display: none !important;
+}
+/*
+ * ----------------------------------------------------------------------------------------
+ * 10.END TESTIMONIAL DESIGN
+ * ----------------------------------------------------------------------------------------
+*/
+.accordion-item {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-header button {
+  background: #fff !important;
+  font-size: 18px;
+  color: #000 !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 24px 20px;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13.START SECTION TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.section-top {
+  padding-bottom: 100px;
+  padding-top: 160px;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.section-top-title h1 {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 13.END SECTION TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/

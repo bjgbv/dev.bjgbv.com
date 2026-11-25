@@ -1,0 +1,62 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 12.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.footer {
+  background: #fff;
+  padding: 30px 0;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.footer:hover {
+  border-radius: 0px;
+}
+.footer_scroll_top p {
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.copyright {
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 880px) {
+  .copyright {
+    text-align: center;
+  }
+}
+.footer_menu {
+  float: right;
+}
+@media only screen and (max-width: 880px) {
+  .footer_menu {
+    float: none;
+    display: inline-block;
+    margin-top: 0px;
+  }
+}
+.footer_menu ul {
+  list-style: none;
+}
+.footer_menu ul li {
+  float: left;
+}
+.footer_menu ul li a {
+  color: #000;
+  padding: 0px 10px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer_menu ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 12.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/

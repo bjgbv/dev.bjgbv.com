@@ -1,0 +1,78 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07. START RESUME PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.resume_area {
+  padding-bottom: 50px;
+}
+.timeline_title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  width: 200px;
+}
+.single_timeline {
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  border-radius: 10px;
+  padding: 40px;
+}
+.edu_info {
+  float: left;
+  overflow: hidden;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 414px) {
+  .edu_info {
+    float: none;
+  }
+}
+.edu_info span {
+  display: block;
+  width: 150px;
+}
+.edu_content {
+  margin-left: 15px;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+}
+@media only screen and (max-width: 414px) {
+  .edu_content {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+.edu_content h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.active_year {
+  font-weight: 600;
+  font-size: 20px !important;
+  margin-bottom: 10px;
+}
+.active_company {
+}
+.single_timeline p {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 990px) {
+  .single_timeline p {
+    padding-right: 0px;
+  }
+}
+/*END EDUCATION & EXPERIENCE STYLE*/
+/*
+* ----------------------------------------------------------------------------------------
+* 07. END RESUME PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/

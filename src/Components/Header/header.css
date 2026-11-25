@@ -1,0 +1,328 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 02.START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.site-logo img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+.bg-faded {
+  background-color: transparent;
+  transition: all 0.5s ease 0s;
+}
+.navbar-fixed {
+  z-index: 999;
+  position: fixed;
+  opacity: 0.98;
+  width: 100%;
+  padding: 10px 0;
+  top: 0;
+  -webkit-animation: fadeInDown 800ms;
+  animation: fadeInDown 800ms;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0px;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+}
+#navigation {
+  padding: 20px 0;
+  /* border-bottom: 1px solid #000; */
+  background-color: #daf8e4;
+  transition: all 0.3s ease !important;
+
+  z-index: 1000;
+}
+#navigation.navbar-fixed {
+  padding: 10px 0;
+  background: #dff4e4;
+  border-color: #dff4e4;
+}
+
+/* when window scroll 150px then */
+
+#navigation.scrolling-nav {
+  padding: 6px 0 !important;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+}
+
+.header_right {
+  display: block;
+  flex-basis: auto;
+}
+#main-menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+#main-menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+#main-menu ul li a {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: oswald, sans-serif;
+  transition: 0.5s;
+  font-size: 16px;
+  padding: 24px 0 26px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+#navigation.navbar-fixed #main-menu ul li a {
+  color: #000;
+  padding: 22px 0 22px;
+}
+#navigation.navbar-fixed #main-menu ul li a:hover,
+#navigation.navbar-fixed #main-menu ul li a:focus,
+#main-menu ul li a:hover,
+#main-menu ul li a:focus {
+  color: #000;
+}
+#main-menu ul li > a:hover,
+#main-menu ul li > a:focus {
+  color: #000;
+}
+#navigation #main-menu ul li a:hover,
+#navigation #main-menu ul li a:focus,
+#navigation.navbar-fixed #main-menu ul li a:hover,
+#navigation.navbar-fixed #main-menu ul li a:focus {
+}
+#navigation.navbar-fixed #main-menu ul li a:hover,
+#navigation.navbar-fixed #main-menu ul li a:focus {
+  color: #000;
+}
+
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #dff4e4;
+  padding: 0px;
+}
+.slicknav_nav_icon {
+  color: #6138bd;
+  font-size: 24px;
+}
+#mobile_menu {
+  display: none;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  #main-menu ul li {
+    margin-left: 30px;
+  }
+}
+/*END 1024px*/
+@media only screen and (max-width: 991px) {
+  #main-menu ul li {
+    margin-left: 9px;
+  }
+  #main-menu ul li a {
+    font-size: 15px;
+  }
+  #navigation {
+    padding: 10px 0 20px;
+    background: #dff4e4;
+  }
+}
+/*END 991px*/
+@media only screen and (max-width: 880px) {
+  #main-menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  #mobile_menu.active {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  #mobile_menu #navigation {
+    padding: 10px 0 20px;
+    background: #000;
+  }
+
+  #mobile_menu #navigation ul li:hover {
+    background: #dff4e4 !important;
+  }
+  #mobile_menu #navigation ul li {
+    transition: all 0.3s ease;
+  }
+  .slicknav_nav-btn {
+    background-color: #000;
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+  }
+  .slicknav_btn span {
+    display: block;
+    width: 0.8rem;
+    height: 1px;
+    margin: 4px;
+    background-color: #fff;
+  }
+  #navigation #mobile_menu li a {
+    color: #fff;
+    font-weight: 400;
+  }
+  #navigation #mobile_menu li li a {
+    color: #222;
+  }
+  #navigation #mobile_menu li i {
+    display: none;
+  }
+  #navigation ul li ul,
+  #navigation ul {
+    transition: 0;
+  }
+  #navigation.navbar-fixed #mobile_menu li a {
+    color: #fff;
+  }
+  .slicknav_nav a {
+    padding: 5px 0px;
+    transition: 0.3s;
+  }
+  #navigation #mobile_menu li a:hover,
+  #navigation #mobile_menu li a:focus {
+    color: #3b61dd;
+  }
+  .slicknav_btn {
+    top: 24px;
+    background: #000;
+  }
+}
+/*END 767px*/
+
+@media only screen and (max-width: 575px) {
+  .slicknav_btn {
+    margin: 0;
+    text-decoration: none;
+    position: absolute;
+    top: 35px;
+    right: 17px;
+  }
+}
+/*END 575px*/
+/*-------------------------------
+# Dropdwon menu 
+--------------------------------*/
+
+#navigation #main-menu ul li ul,
+#navigation #main-menu ul li ul li ul {
+  background: #fff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  left: -55px;
+  list-style: outside none none;
+  margin: 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: 999;
+  border-radius: 4px;
+  border-top: 2px solid #3b61dd;
+}
+#navigation #main-menu ul li ul li {
+  position: relative;
+}
+#navigation #main-menu ul li ul li ul {
+  top: 0;
+  right: auto;
+  left: 205px;
+}
+#navigation.navbar-fixed #main-menu ul li li a {
+  color: #000;
+}
+#navigation #main-menu ul li:hover ul,
+#navigation #main-menu ul li ul li:hover > ul {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+}
+#navigation #main-menu ul li ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation.navbar-fixed #main-menu ul li ul li a,
+#navigation #main-menu ul li ul li a {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  padding: 5px 12px;
+  position: relative;
+  transition: all 0.3s ease 0s !important;
+  visibility: inherit !important;
+  opacity: inherit !important;
+  text-transform: capitalize;
+}
+
+#navigation #main-menu ul li ul li a:hover,
+#navigation.navbar-fixed #main-menu ul li ul li a:hover,
+#navigation.navbar-fixed #main-menu ul li ul li a:focus {
+  color: #fff;
+  background-color: #3b61dd;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 20px;
+  }
+}
+.social_profile {
+  margin-top: 25px;
+}
+.social_profile ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.social_profile ul li {
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  .social_profile ul li {
+    margin: 5px;
+  }
+}
+.social_profile ul li a {
+  color: #000;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.social_profile ul li a:hover {
+}
+/*END SOCIAL DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/

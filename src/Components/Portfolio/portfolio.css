@@ -1,0 +1,178 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 06. START PORTFILIO PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.portfolio_area {
+  padding-bottom: 50px;
+}
+.portfolio-filters {
+  margin-bottom: 60px;
+}
+.portfolio-filters li.active {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+.portfolio-filters li {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 5px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  font-family: oswald, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio-filters li {
+    padding: 8px 24px;
+    margin-bottom: 10px;
+  }
+}
+.portfolio-filters li:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+.grid {
+  overflow: hidden;
+}
+/* .mix {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+} */
+.single_portfolio {
+  margin: 0 0px 30px;
+  position: relative;
+}
+.port_image {
+  position: relative;
+}
+.port_image:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(
+    bottom,
+    #202f59 0%,
+    rgba(32, 47, 89, 0) 100%
+  );
+  transition: all 0.25s ease;
+  height: 35%;
+  width: 100%;
+}
+.single_portfolio:hover .port_image:after {
+  height: 100%;
+}
+.portfolio_text {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  border-top: none;
+  margin-top: -40px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  z-index: 1;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.single_portfolio:hover .portfolio_text {
+  background: #000;
+  color: #fff;
+}
+.portfolio_text span {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.portfolio_text h3 a {
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.single_portfolio:hover .portfolio_text h3 a {
+  color: #fff;
+}
+.single_portfolio img {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+}
+
+.single_portfolio h5 {
+  font-size: 19px;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+}
+/*END PORTFOLIO SINGLE PAGE DESIGN*/
+.single_project_area {
+}
+.single_project_details {
+  background: #fff;
+  padding: 60px;
+}
+.single_project_details img {
+}
+.single_project_details h1 {
+  margin: 20px 0;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+@media only screen and (max-width: 480px) {
+  .single_project_details h1 {
+    margin: 20px 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+.project_details_info {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.project_details_info h4 {
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.project_details_info ul {
+  list-style: none;
+}
+.project_details_info ul li {
+  line-height: 32px;
+}
+.project_details_info ul li i {
+  color: #000;
+  margin-right: 10px;
+}
+.project_details_info ul li a {
+  color: #000;
+}
+.single_project_details p {
+}
+/*END SINGLE PROJECT DETAILS*/
+/*
+* ----------------------------------------------------------------------------------------
+* 06. END PORTFILIO PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/

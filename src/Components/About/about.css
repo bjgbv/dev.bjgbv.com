@@ -1,0 +1,70 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. START ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 768px) {
+  .about_img {
+    margin-bottom: 60px;
+  }
+}
+.about_img img {
+  width: 100%;
+  padding-right: 40px;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .about_img img {
+    padding-right: 0px;
+  }
+}
+.about_info {
+  margin-top: 30px;
+}
+.about_info h1 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.about_info h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+.about_info p {
+  margin-bottom: 30px;
+}
+.about_info a {
+  color: #fff;
+  background: #6138bd;
+  padding: 12px 30px;
+  transition: 0.3s;
+  border-radius: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.award_area img {
+  float: left;
+  margin-right: 30px;
+  width: 200px;
+}
+.award_area h4 {
+  padding-top: 20px;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. END ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/

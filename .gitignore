@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/           # of build/, public/assets als die gegenereerd wordt
+.env            # database-wachtwoorden, API-keys: nooit committen!
+*.log
+.DS_Store
+.idea

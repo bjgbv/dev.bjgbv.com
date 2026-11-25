@@ -1,0 +1,62 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05. START SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.service_area {
+  padding-bottom: 50px;
+}
+.single_service {
+  padding-top: 60px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+}
+.single_service:hover {
+  background: #000;
+}
+.single_service span {
+  font-size: 50px;
+  display: inline-block;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.single_service:hover span {
+  color: #fff;
+}
+.single_service h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.single_service:hover h3 {
+  color: #fff;
+}
+.single_service p {
+  margin-bottom: 30px;
+}
+.single_service:hover p {
+  color: #fff;
+}
+.single_service a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  background: #fff;
+  display: block;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05. END SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
